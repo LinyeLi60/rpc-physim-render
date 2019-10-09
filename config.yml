@@ -1,0 +1,23 @@
+camera:
+  num_poses: 1
+  camera_poses: [[0, 0, 2, 1, 0, 0, 0], ]
+  camera_intrinsics: [[3686, 0.0, 921.5],[0.0, 3686, 921.5],[0.0, 0.0, 1.0]]
+
+rest_surface:
+  type: board
+  surface_pose: [0, 0, 0, 0.7, 0.7, 0, 0]
+
+Models: [ 47, 49, 62, 63, 67, 71, 201]
+
+params:
+  num_images: 20
+  label_type: pixel    # pixel or box
+  minimum_objects_in_scene: 4
+  maximum_objects_in_scene: 6
+  range_x: [-0.025, 0.025]
+  range_y: [-0.025, 0.025]
+  range_z: [0.45, 0.55]
+  num_simulation_steps: 50
+  light_position_range_x: [-0.2, 0.2]
+  light_position_range_y: [-0.2, 0.2]
+  light_position_range_z: [1.0, 1.5]
